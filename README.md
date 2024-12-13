@@ -1,6 +1,6 @@
 # IdaLy
 This repository contains code for the paper, Advancing Industrial Data Augmentation: A Thorough Survey from Foundations to Frontier Applications (submitted). IdaLy provides a python library and a software that support various algorithms for industrial data augmentation, which can promote the effiency of your industrial machine learning projects (such as fault diagnosis and soft sensor). You can use any algorithms in your script files by importing the python library. Certainly, if you are not familiar with coding of python or just want to finish augmentation tasks conveniently, you can use our software directly.  
-## Augmentations
+## 1. Data Augmentation Methods
 Because of the sampling difficulty and data privacy of industrial data, data we can acquire from real industry process sometimes is insufficient, thus causing problems such as overfitting and class-imblance while training intelligent agencies. Nowadays, more and more data augmentation algorithms are applied in the field of industrial big data. We collect some algorithms often used and classify them as follows:  
  ![methods](https://github.com/3uchen/IdaLy/blob/master/methods.png)  
  We collect these algorithms in a python library.You can download it in [idaly](https://github.com/3uchen/IdaLy/tree/master/src/idaly) directly. Or you can download the library by pip instrustion: `pip install idaly`. It should be noted that the library is Python-based and requires at least Python 3.6, and the envrionment should satify [requirement.txt](https://github.com/3uchen/IdaLy/blob/master/requirements.txt).  
@@ -20,8 +20,7 @@ Because of the sampling difficulty and data privacy of industrial data, data we 
  # visualization()
  np.save(np.concentrate((ori_data, gen_data), axis=0),out_data_path)
  ```
-Based on Tennessee Eastman (TE) process dataset, We conducted a comparative experiment of 19 commonly used industrial data augmentation methods and the results are: [Results.xlsx](https://github.com/3uchen/IdaLy/blob/master/Results.xlsx) 
- ## Industrial Data Augmentation Platform
+ ## 2. Industrial Data Augmentation Platform
  ![example](https://github.com/3uchen/IdaLy/blob/master/example.png)  
  To fininsh industrial data augmentation tasks more conveniently, we intergrate algorithms mentioned above into a software developed by pyqt5. You can download the software [here](https://drive.google.com/file/d/1muqsfoieiJoRcCWeEK9OmyYlBWDwvyO4/view?usp=sharing) directly, or clone Idaly and run our python file.  
  ```
@@ -43,8 +42,26 @@ IDAS embed simulation test module to further identify the effect of data augment
 - **Save**  
 You can save generated data, generative model (if any) and test result by click the related buttons respectively. Or you can save all results by click the label button of "Save all".  
 
+## 3. Benchmark (TEP dataset)
+ 
+Based on Tennessee Eastman (TE) process dataset, We conducted a comparative experiment of 19 commonly used industrial data augmentation methods and the results are: 
 
-If you have any question, please contact:
-jiangxiaoyu@zju.edu.cn
-zhengchen0113@zju.edu.cn
+<center>
+  <img src="https://github.com/user-attachments/assets/11ce1907-95cd-49a2-b7b9-fbe8a0d568b0" width="100%" />
+  <p>Fig. 3.1 Inference Time and Accuracy of Fault Classification under Different Data Augmentation Methods.</p>
+</center>
+
+  <img src="https://github.com/user-attachments/assets/e0a4c6ab-003c-4cd4-a225-2cacead971ee" width="60%" />
+  <p>Fig. 3.2 Tiered Criteria for Different Metrics.</p>
+
+
+  <img src="https://github.com/user-attachments/assets/eceb4432-53be-45bd-8b92-b82356fd97f9" width="80%" />
+  <p>Fig. 3.3 Ranking of Different Data Augmentation Methods on TEP Dataset.</p>
+
+## 4. Contact
+ 
+  jiangxiaoyu@zju.edu.cn
+  
+  zhengchen0113@zju.edu.cn
+
  
