@@ -42,7 +42,7 @@ IDAS embed simulation test module to further identify the effect of data augment
 - **Save**  
 You can save generated data, generative model (if any) and test result by click the related buttons respectively. Or you can save all results by click the label button of "Save all".  
 
-## 3. Benchmark (TEP dataset)
+## 3. Case Study (TEP dataset)
  
 Based on Tennessee Eastman (TE) process dataset, We conducted a comparative experiment of 19 commonly used industrial data augmentation methods and the results are: 
 
