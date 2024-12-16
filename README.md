@@ -22,10 +22,10 @@ Because of the sampling difficulty and data privacy of industrial data, data we 
  ```
  ## 2. Industrial Data Augmentation Platform
  ![example](https://github.com/3uchen/IdaLy/blob/master/example.png)  
- To fininsh industrial data augmentation tasks more conveniently, we intergrate algorithms mentioned above into a software developed by pyqt5. You can download the software [here](https://drive.google.com/file/d/1muqsfoieiJoRcCWeEK9OmyYlBWDwvyO4/view?usp=sharing) directly, or clone Idaly and run our python file.  
+ To fininsh industrial data augmentation tasks more conveniently, we intergrate algorithms mentioned above into a software developed by pyqt5. You can download the software [here](https://drive.google.com/file/d/1muqsfoieiJoRcCWeEK9OmyYlBWDwvyO4/view?usp=sharing) directly, or clone Idaly and run our python file. You can see tutorial video here [tutorial](https://github.com/3uchen/IdaLy/blob/master/Tutorial.mp4).
  ```
  git clone git@github.com:3uchen/IdaLy.git
- cd src\idap
+ cd src
  python idap_v1.py
  ```  
 Idap mainly consists of seven modules: data import, algorithm select, algorithm description, parameter setting, PCA visualization, simulation test and save.
@@ -44,10 +44,10 @@ You can save generated data, generative model (if any) and test result by click 
 
 ## 3. Case Study (TEP dataset)
  
-Based on Tennessee Eastman (TE) process dataset, We conducted a comparative experiment of 19 commonly used industrial data augmentation methods and the results are: 
+We selected Tennessee Eastman (TE) process to conduct case study. The TE dataset consists 52 observed variables and 21 fault categories. In order to create an imbalanced fault classfication scenario, we selected four fault categories, and their sample numbers are 50, 150, 250, 500. We conducted a comparative experiment of 20 commonly used industrial data augmentation methods and the results are: 
 
 <center>
-  <img src="https://github.com/user-attachments/assets/11ce1907-95cd-49a2-b7b9-fbe8a0d568b0" width="100%" />
+  <img src="https://github.com/3uchen/IdaLy/blob/master/test%20results.png" width="100%" />
   <p>Fig. 3.1 Inference Time and Accuracy of Fault Classification under Different Data Augmentation Methods.</p>
 </center>
 
@@ -55,7 +55,7 @@ Based on Tennessee Eastman (TE) process dataset, We conducted a comparative expe
   <p>Fig. 3.2 Tiered Criteria for Different Metrics.</p>
 
 
-  <img src="https://github.com/user-attachments/assets/eceb4432-53be-45bd-8b92-b82356fd97f9" width="80%" />
+  <img src="https://github.com/3uchen/IdaLy/blob/master/Rankings.png" width="80%" />
   <p>Fig. 3.3 Ranking of Different Data Augmentation Methods on TEP Dataset.</p>
 
 ## 4. Contact
