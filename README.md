@@ -44,7 +44,7 @@ You can save generated data, generative model (if any) and test result by click 
 
 ## 3. Case Study (TEP dataset)
  
-We selected Tennessee Eastman (TE) process to conduct case study. The TE dataset consists 52 observed variables and 21 fault categories. In order to create an imbalanced fault classfication scenario, we selected four fault categories, and their sample numbers are 50, 150, 250, 500. We conducted a comparative experiment of 20 commonly used industrial data augmentation methods and the results are: 
+We selected Tennessee Eastman (TE) process to conduct case study. The TE dataset consists 52 observed variables and 21 fault categories. In order to create an imbalanced fault classfication scenario, we selected four fault categories, and their sample numbers are 50, 150, 250, 500. We conducted a comparative experiment of 20 commonly used industrial data augmentation methods. The parameters setting of each methods are listed as here [parameters setting](https://github.com/3uchen/IdaLy/blob/master/Parameters%20Setting.xlsx) and the results are: 
 
 <center>
   <img src="https://github.com/3uchen/IdaLy/blob/master/test%20results.png" width="100%" />
